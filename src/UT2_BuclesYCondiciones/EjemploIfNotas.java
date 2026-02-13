@@ -1,11 +1,11 @@
-package T2_Ejemplos;
+package UT2_BuclesYCondiciones;
 
 import java.util.Scanner;
 
 public class EjemploIfNotas {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        char respuestaCorrecta;
+        char respuesta;
         System.out.println("INTRODUCE UNA NOTA POR TECLADO");
         float nota = teclado.nextFloat();
 
