@@ -14,15 +14,19 @@ public class Ejercicio22 {
                 "JORGE|29|ASIR|7.0",
                 "BEATRIZ|23|DAW|9.4"
         };
-
+        System.out.println("LISTADO NOMBRES DE ALUMNOS");
+        System.out.println("**************************");
         mostrarNombres(alumnos);
         int mediaEdades = obtenerMediaEdades(alumnos);
+        System.out.println("**************************");
         System.out.println("LA MEDIA DE TODOS LOS ALUMNOS ES: " + mediaEdades);
-
-        obtenerNotaMaxima();
-        /*
-        mostrarAlumnosPorCiclo();
-        mostrarAlumnosPorCiclo();
+        double notaMax=obtenerNotaMaxima(alumnos);
+        System.out.println("**************************");
+        System.out.println("LA NOTA MÁXIMA ES: " + notaMax);
+        System.out.println("**************************");
+        System.out.println("CONTEO DE ALUMNOS POR CICLO");
+        mostrarAlumnosPorCiclo(alumnos);
+        /*mostrarAlumnosPorCiclo();
         */
 
 
@@ -56,7 +60,7 @@ public class Ejercicio22 {
     //RECIBIRÁ UN ARRAY CON UNA LINEA TROCEADA Y DEVOLVERÁ EL VALOR DE LA NOTA
     public static double obtenerNotaDeLinea(String[] lin){
         double nota = Double.parseDouble(lin[3]);
-        return 0.0;
+        return nota;
     }
     //RECIBIRÁ EL ARRAY COMPLETO DE ALUMNOS Y MOSTRARÁ ÚNICAMENTE LOS NOMBRES DE LOS
     //ALUMNOS
@@ -81,16 +85,57 @@ public class Ejercicio22 {
     }
     //RECIBIRÁ EL ARRAY COMPLETO DE ALUMNOS Y RETORNARÁ LA NOTA MÁXIMA DE TODOS LOS ALUMNOS
     public static double obtenerNotaMaxima(String[] alumnos){
-        return 0;
+        String [] linea = new String[4];
+        double notamax = 0.0;
+        for (int i = 0; i < alumnos.length; i++) {
+            linea = parsearLinea(alumnos[i]);
+            if (notamax<obtenerNotaDeLinea(linea)){
+                notamax = obtenerNotaDeLinea(linea);
+            }
+        }
+        return notamax;
     }
-
-    //RECIBIRÁ EL ARRAY COMPLETO DE ALUMNOS Y MOSTRARÁ LOS ALUMNOS ORDENADOS POR CICLO
+   //RECIBIRÁ EL ARRAY COMPLETO DE ALUMNOS Y MOSTRARÁ LOS ALUMNOS ORDENADOS POR CICLO
     public static void mostrarAlumnosPorCiclo(String[] alumnos){
-
+        String [] linea = new String[4];
+        int contDaw=0;
+        int contDam=0;
+        int contAsir=0;
+        for (int i = 0; i < alumnos.length; i++) {
+            linea = parsearLinea(alumnos[i]);
+            if (linea[2].equalsIgnoreCase("DAW")){
+                contDaw++;
+            }
+            if (linea[2].equalsIgnoreCase("DAM")){
+                contDam++;
+            }
+            if (linea[2].equalsIgnoreCase("ASIR")){
+                contAsir++;
+            }
+        }
+        System.out.println("ALUMNOS DE DAW:" + contDaw);
+        System.out.println("ALUMNOS DE DAM:" + contDam);
+        System.out.println("ALUMNOS DE ASIR:" + contAsir);
     }
     //RECIBIRÁ EL ARRAY COMPLETO DE ALUMNOS Y MOSTRARÁ LOS ALUMNOS QUE CURSAN
     //EL CICLO RECIBIDO POR PARÁMETRO.
     public static void mostrarAlumnosPorCiclo(String[] alumnos, String ciclo){
 
+
+
     }
+
+
+
+
+    //RECIBIRÁ EL ARRAY COMPLETO DE ALUMNOS Y MOSTRARÁ LOS ALUMNOS ORDENADOS POR CICLO
+    public static void mostrarNombreAlumnosPorCiclo(String[] alumnos){
+
+    }
+    //RECIBIRÁ EL ARRAY COMPLETO DE ALUMNOS Y MOSTRARÁ LOS ALUMNOS QUE CURSAN
+    //EL CICLO RECIBIDO POR PARÁMETRO.
+    public static void mostrarNombreAlumnosPorCiclo(String[] alumnos, String ciclo){
+
+    }
+
 }
