@@ -1,4 +1,4 @@
-package T4_ObjetosI;
+package UT4_POOI.EjemploInicialClasePersona;
 
 public class Ejemplo {
     public static void main(String[] args) {

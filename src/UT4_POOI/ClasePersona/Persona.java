@@ -1,7 +1,7 @@
-
+package UT4_POOI.ClasePersona;
 import java.util.regex.Pattern;
 
-public class PersonaMain 
+public class Persona
 {
     private final String dni;
     private String nombre;

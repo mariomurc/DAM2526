@@ -1,4 +1,4 @@
-
+package UT4_POOI.ClaseArticulo;
 public class Articulo {
 
     private String nombre;

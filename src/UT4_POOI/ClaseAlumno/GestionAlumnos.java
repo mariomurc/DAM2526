@@ -1,4 +1,4 @@
-package T4_ObjetosI.GestionAlumnos;
+package UT4_POOI.ClaseAlumno;
 
 public class GestionAlumnos {
     public static void main(String[] args) {

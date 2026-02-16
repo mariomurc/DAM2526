@@ -1,7 +1,7 @@
-
+package UT4_POOI.ClasePersona;
 import java.util.Scanner;
 
-public class MainPersona {
+public class PersonaMain {
 
     public static void main(String[] args) {
 
