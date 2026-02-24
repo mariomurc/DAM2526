@@ -29,7 +29,7 @@ public class Main {
             c = new Carcaj("PAPEL",arrayF);
         }
 
-        Elfo e1 = new Elfo("Laura",100,0,0,c,a1);
+        Elfo e1 = new Elfo("Laura",100,new Punto(0,0),c,a1);
         System.out.println(e1.toString());
 
 
