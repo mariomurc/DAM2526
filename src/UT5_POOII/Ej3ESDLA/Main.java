@@ -4,16 +4,29 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Mago m = new Mago("mario",100,new Punto(0,0),
-                new Tunica("VERDE","SEDA"),new Sombrero(23,4));
 
-        Punto p1 = new Punto(3,4);
-        Tunica t1 = new Tunica("AZUL", "ALGODON");
-        Sombrero s1 = new Sombrero(33,8);
-        Mago m1 = new Mago("Antonio", 100, p1,t1,s1);
+        Personaje per[] = new Personaje[4];
+        per[0] = crearMago("Antonio");
+        crearMago("María");
 
-        System.out.println(m.toString());
+        per[1] = crearElfo("Julián");
+        crearElfo("Laura");
 
+        per[2] = crearOrco("Marina");
+        crearOrco("Gael");
+
+        per[3] = crearNazgul("Elian");
+        crearNazgul("Candela");
+
+        for (int i = 0; i < per.length ; i++) {
+            System.out.println(per[i].toString());
+        }
+
+
+
+
+    }
+    public static Elfo crearElfo(String nombre){
         Arco a1 = new Arco(3.4,6.7);
         Random r = new Random();
         Carcaj c;
@@ -29,10 +42,20 @@ public class Main {
             c = new Carcaj("PAPEL",arrayF);
         }
 
-        Elfo e1 = new Elfo("Laura",100,new Punto(0,0),c,a1);
-        System.out.println(e1.toString());
-
-
-
+        Elfo e1 = new Elfo(nombre,100,new Punto(0,0),c,a1);
+        return e1;
+    }
+    public static Orco crearOrco(String nombre){
+        Orco o = new Orco(nombre, 100, new Punto(0,0));
+        return o;
+    }
+    public static Mago crearMago(String nombre){
+        Mago m = new Mago(nombre,100,new Punto(0,0),
+                new Tunica("VERDE","SEDA"),new Sombrero(23,4));
+        return m;
+    }
+    public static Nazgul crearNazgul(String nombre){
+        Nazgul n = new Nazgul(nombre, 100, new Punto(0,0));
+        return n;
     }
 }
