@@ -3,7 +3,8 @@ package UT5_POOII.EjemploPolimorfismo2.Ej3_Polimorfismo_Y_CastingDeTipos;
 public class Polimorfismo_Y_CastingDeTipos {
 
     public static void main(String[] args) {
-        /*En las siguientes líneas podemos observar que mediante el polimorfismo en la parte derecha de la asignación
+        /*En las siguientes líneas podemos observar que mediante el polimorfismo en la parte derecha de la
+        asignación
         esperamos algo de tipo Object y recibimos algo de tipo Círculo y Rectángulo*/
         Object objetoPrimero = new Circulo(3, "naranja", true);//POLIMORFISMO!!!
         Object objetoSegundo = new Rectangulo(3,6, "rojo", false);//POLIMORFISMO!!!

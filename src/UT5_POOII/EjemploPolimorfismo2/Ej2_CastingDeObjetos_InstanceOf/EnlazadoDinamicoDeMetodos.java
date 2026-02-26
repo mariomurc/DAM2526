@@ -5,14 +5,17 @@ public class EnlazadoDinamicoDeMetodos {
     public static void main(String[] args) {
         metodo(new Estudiante());
         /*La sentencia anterior equivale a lo siguiente*/
-        Object objeto = new Estudiante();//Allá donde se espera algo del supertipo podemos pasarle algo del subtipo
-        /*En la línea anterior podemos observar una transformación de tipos implícita, gracias a la definición de 
+        Object objeto = new Estudiante();//Allá donde se espera algo del supertipo podemos pasarle algo del
+        // subtipo
+        /*En la línea anterior podemos observar una transformación de tipos implícita, gracias a la definición
+        de
         polimorfismo no necesitamos hacer nada más*/
         metodo(objeto);
 
         //Si tenemos esto:
-        //Estudiante estudiante = objeto;
-        /*necesitamos decirle al compilador que a pesar de que el tipo declarado de la variable 'objeto' es de tipo 
+       // Estudiante estudiante = objeto;
+        /*necesitamos decirle al compilador que a pesar de que el tipo declarado de la variable 'objeto' es de
+        tipo
         Object, en el momento en el que se ejecute esa línea de código el tipo actual de 'objeto' será de tipo 
         Estudiante y por tanto compatible con la asignación*/
         Estudiante estudiante = (Estudiante) objeto;
@@ -21,7 +24,8 @@ public class EnlazadoDinamicoDeMetodos {
         ESTO SE CONOCE COMO: casting explícito [a una clase inferior en la jerarquía (DOWNCASTING)]
          */
 
-        Object objetoGenérico = new Estudiante();
+        //Object objetoGenérico = new Estudiante();
+        Object objetoGenérico = new Persona();
         if (objetoGenérico instanceof Estudiante) {
             ((Estudiante) objetoGenérico).metodoClaseEstudiante();
         }

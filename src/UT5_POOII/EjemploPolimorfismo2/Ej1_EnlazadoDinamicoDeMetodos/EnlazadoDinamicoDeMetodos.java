@@ -7,6 +7,8 @@ public class EnlazadoDinamicoDeMetodos {
         Persona p=new Persona();
         metodo(new Object());
         System.out.println(p.getClass());
+
+
     }
 
     public static void metodo(Object o) {
@@ -25,7 +27,6 @@ class Estudiante extends Persona {
         return "Estudiante";
     }
 }
-
 class EstudianteGraduado extends Estudiante {
 
 }
