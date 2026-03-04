@@ -2,5 +2,5 @@ package UT5_POOII.InterfazPagable;
 
 public interface Pagable {
     double calcularImporte();
-    String generarTicket();
+    String generarTicket(double importeCalculado);
 }
