@@ -17,6 +17,7 @@ public class ProgramaAgenda {
 
         agenda.listarContactos();
 
+
         System.out.println("\n--- PRUEBA DE LLAMADAS ---");
         agenda.llamarA("Juan Pérez");
         agenda.llamarA("ACME Corp");

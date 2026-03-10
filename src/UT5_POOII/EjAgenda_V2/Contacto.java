@@ -10,6 +10,13 @@ public abstract class Contacto implements Llamable {
         this.telefono = telefono;
     }
 
+    public final void mostrarFicha(){
+        String tipo = this.getClass().getSimpleName();
+        System.out.println(" TIPO CONTACTO: " + tipo);
+        System.out.println("Nombre Contacto: " + this.getNombre() );
+        System.out.println("Telefono: " + this.getTelefono() );
+
+    }
     public String getNombre() {
         return nombre;
     }

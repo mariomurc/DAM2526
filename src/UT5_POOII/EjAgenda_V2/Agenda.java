@@ -58,7 +58,8 @@ public class Agenda {
         }
 
         for (int i = 0; i < numContactos; i++) {
-            System.out.println(contactos[i]);
+            //System.out.println(contactos[i]);
+            contactos[i].mostrarFicha();
         }
     }
 

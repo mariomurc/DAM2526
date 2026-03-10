@@ -9,6 +9,7 @@ public class ContactoEmpresa extends Contacto {
         this.web = web;
     }
 
+
     @Override
     public String getTelefono() {
         String t = getTelefonoBase();
