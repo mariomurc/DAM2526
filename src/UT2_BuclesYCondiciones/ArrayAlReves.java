@@ -1,4 +1,4 @@
-package T2_Ejemplos;
+package UT2_BuclesYCondiciones;
 
 import java.util.Arrays;
 
