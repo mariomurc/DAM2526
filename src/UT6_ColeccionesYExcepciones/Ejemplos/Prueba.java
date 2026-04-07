@@ -1,7 +1,5 @@
 package UT6_ColeccionesYExcepciones.Ejemplos;
 
-import UT6_ColyExcp.Ejemplos.Persona;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -47,21 +45,21 @@ public class Prueba {
         for (String s : lista1) {
             System.out.println(s);
         }*/
-        ArrayList<UT6_ColyExcp.Ejemplos.Persona> lista2 = new ArrayList<UT6_ColyExcp.Ejemplos.Persona>();
+        ArrayList<Persona> lista2 = new ArrayList<Persona>();
 
         Scanner teclado = new Scanner(System.in);
         System.out.println("¿Cuantos Persona quieres?");
         Integer n = teclado.nextInt();
 
         for (int i = 0; i < n; i++) {
-            lista2.add(new UT6_ColyExcp.Ejemplos.Persona());
+            lista2.add(new  Persona());
         }
         teclado.nextLine();
-        for (UT6_ColyExcp.Ejemplos.Persona persona : lista2) {
+        for ( Persona persona : lista2) {
             persona.setNombre(teclado.nextLine());
         }
 
-        Iterator<UT6_ColyExcp.Ejemplos.Persona> iter1;
+        Iterator< Persona> iter1;
         iter1 = lista2.iterator(); // Creamos el Iterator a partir de la lista
         while(iter1.hasNext()) { // Mientras haya siguiente en la lista
             iter1.next().mostrarPersona(); // Lo imprimimos por pantalla
