@@ -1,6 +1,5 @@
-package UT6_ColeccionesYExcepciones.EjerBingo;
+package UT6_ColeccionesYExcepciones.EjBingo;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class GestionBingo {
