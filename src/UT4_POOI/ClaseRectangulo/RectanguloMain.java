@@ -1,4 +1,4 @@
-package T4_ObjetosI.EjerciciosTema4;
+package UT4_POOI.ClaseRectangulo;
 
 public class RectanguloMain {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class RectanguloMain {
         //APARTADO D
 
         //APARTADO C
-        Rectangulo r1 = new Rectangulo(2,5, 5, 8);
+        /*Rectangulo r1 = new Rectangulo(2,5, 5, 8);
         System.out.println("(" + r1.getX1() +"," + r1.getY1() + ")"
                 + " (" + r1.getX2() +"," + r1.getY2() + ")");
         r1.setX1(r1.getX1()+1);
@@ -17,7 +17,7 @@ public class RectanguloMain {
         r1.setX1(r1.getX1()+6);
         System.out.println("(" + r1.getX1() +"," + r1.getY1() + ")"
                 + " (" + r1.getX2() +"," + r1.getY2() + ")");
-
+*/
 
 
         //APARTADO B
