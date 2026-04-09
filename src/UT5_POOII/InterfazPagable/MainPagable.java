@@ -4,15 +4,8 @@ public class MainPagable {
     public static void main(String[] args) {
 
         Pagable arrayPagos [] = new Pagable[4];
-
-        /*en el ArrayPagos puedo almacenar distintos objetos de tipo Suscripción/Factura
-        Por ejemplo supongamos que planteamos los siguiente:
-            1-6 meses: 12
-            
-
-
-         */
         Suscriptor arraySuscriptores [] = new Suscriptor[10];
+
 
         arraySuscriptores[0] = new SuscVip("Mario","777",new Suscripcion(10,10),1,5);
         arraySuscriptores[1] = new SuscNormal("JuanKar","1234",new Suscripcion(12,6),false);

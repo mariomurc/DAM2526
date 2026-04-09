@@ -12,7 +12,7 @@ public class SuscNormal extends Suscriptor{
         double base = getSuscripcion().calcularImporte();
         double total = base;
 
-        if (anuncios){
+        if (!anuncios){
             total = base + 5;
         }
         System.out.println("&& SUSCRIPCIÓN PAGADA &&");

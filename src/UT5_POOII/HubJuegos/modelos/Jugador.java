@@ -1,5 +1,5 @@
 
-package UT5_POOII.HubJuegos;
+package UT5_POOII.HubJuegos.modelos;
 
 public class Jugador {
     private final String nombre;

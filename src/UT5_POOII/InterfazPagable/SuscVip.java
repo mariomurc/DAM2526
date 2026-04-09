@@ -1,7 +1,5 @@
 package UT5_POOII.InterfazPagable;
 
-import java.sql.SQLOutput;
-
 public class SuscVip extends Suscriptor{
     private int idVip;
     private int aniosVip;

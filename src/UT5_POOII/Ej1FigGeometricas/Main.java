@@ -1,7 +1,5 @@
 package UT5_POOII.Ej1FigGeometricas;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 

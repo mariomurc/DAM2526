@@ -1,4 +1,4 @@
-package UT5_POOII.HubJuegos;
+package UT5_POOII.HubJuegos.modelos;
 
 public class EstadisticasJugador {
     private int puntos;

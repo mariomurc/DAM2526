@@ -8,7 +8,14 @@ public class Main {
         p1.nadar();
         p.moverse();
         p1.moverse();
+        Gamba g = new Gamba(3);
+        Animales[] animales = {g,p};
+
+
         Animales array[] = new Animales[5];
+
+
+
         array[0] = p;
         array[1] = p1;
         array[2] = new Gamba(22);

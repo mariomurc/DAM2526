@@ -1,6 +1,12 @@
 
-package UT5_POOII.HubJuegos;
+package UT5_POOII.HubJuegos.juegos;
 
+
+import UT5_POOII.HubJuegos.modelos.EstadoPartida;
+import UT5_POOII.HubJuegos.modelos.Jugador;
+import UT5_POOII.HubJuegos.modelos.ResultadoPartida;
+import UT5_POOII.HubJuegos.modelos.TipoJuego;
+import UT5_POOII.HubJuegos.interfaces.Jugable;
 
 /**
  * Clase abstracta base para todos los juegos del sistema.
@@ -18,6 +24,7 @@ public abstract class Juego implements Jugable {
         this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
+
         this.estado = EstadoPartida.CREADA;
     }
 
@@ -46,6 +53,7 @@ public abstract class Juego implements Jugable {
      */
     public final ResultadoPartida ejecutarPartida() {
         /* SI ESTO OCURRIERA, NO DEBERÍAMOS CONTINUAR PERO LO GESTIONAREMOS CUANDO VEAMOS EXCEPCIONES
+        if (estado.equals("CREADO") {
         if (estado != EstadoPartida.CREADA) {
             System.out.println("La partida no está en estado CREADA. Estado actual: " + estado);
         }

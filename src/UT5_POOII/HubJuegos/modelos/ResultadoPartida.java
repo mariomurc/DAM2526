@@ -1,5 +1,5 @@
 
-package UT5_POOII.HubJuegos;
+package UT5_POOII.HubJuegos.modelos;
 
 public class ResultadoPartida {
     public final Jugador ganador; // puede ser null en caso de empate

@@ -18,14 +18,6 @@ public class Contacto {
         return telefono;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (!(obj instanceof Contacto)) return false;
-
-        Contacto otro = (Contacto) obj;
-        return this.nombre.equalsIgnoreCase(otro.nombre);
-    }
 
     @Override
     public String toString() {

@@ -1,6 +1,13 @@
 
-package UT5_POOII.HubJuegos;
+package UT5_POOII.HubJuegos.hub;
 
+
+import UT5_POOII.HubJuegos.modelos.Jugador;
+import UT5_POOII.HubJuegos.modelos.ResultadoPartida;
+import UT5_POOII.HubJuegos.juegos.Juego;
+import UT5_POOII.HubJuegos.juegos.JuegoAdivinaNumero;
+import UT5_POOII.HubJuegos.juegos.JuegoPPT;
+import UT5_POOII.HubJuegos.juegos.JuegoTresEnRaya;
 
 public class HubJuegos {
     public Jugador[] jugadores = new Jugador[5];

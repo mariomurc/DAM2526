@@ -1,7 +1,6 @@
 package UT5_POOII.Ej4Mascotas;
 
 import java.time.LocalDate;
-import java.util.Scanner;
 
 public class ProgramaInventario {
     
@@ -33,11 +32,17 @@ public class ProgramaInventario {
         //Mostrar todos los datos de todos los animales.
         inv.mostrarTodosAnimales();
         //Insertar animales en el inventario.
-        inv.insertarAnimal(new Canario("Basilio1", LocalDate.of(2022,01,01),
-                "Largo1", true, "amarillo1", true));
+        /*inv.insertarAnimal(new Canario("Basilio1", LocalDate.of(2022,01,01),
+       º             "Largo1", true, "amarillo1", true));*/
         System.out.println("##########################");
         inv.mostrarTodosAnimales();
         //Eliminar animales del inventario.
+/*
+        inv.queTodosLosQuePuedanHablen();
+        inv.queTodosLosQuePuedanVuelen();
+        inv.queTodosLosQuePuedanSaluden();
+*/
+
 
         //Vaciar
 

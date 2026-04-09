@@ -7,7 +7,7 @@ public abstract class Animales {
         this.numPatas = numPatas;
     }
 
-    void moverse(){
+    public void moverse(){
         System.out.println("SOY UN ANIMAL QUE SE MUEVE");
     }
     abstract void nadar();

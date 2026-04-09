@@ -1,7 +1,11 @@
 
-package UT5_POOII.HubJuegos;
+package UT5_POOII.HubJuegos.juegos;
 
 
+import UT5_POOII.HubJuegos.modelos.Jugador;
+import UT5_POOII.HubJuegos.modelos.ResultadoPartida;
+import UT5_POOII.HubJuegos.modelos.TipoJuego;
+import UT5_POOII.HubJuegos.interfaces.Puntuable;
 
 public class JuegoTresEnRaya extends Juego implements Puntuable {
     private char[][] tablero = new char[3][3];

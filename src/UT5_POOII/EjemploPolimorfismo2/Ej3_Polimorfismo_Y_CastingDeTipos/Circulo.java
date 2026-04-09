@@ -1,7 +1,5 @@
 package UT5_POOII.EjemploPolimorfismo2.Ej3_Polimorfismo_Y_CastingDeTipos;
 
-import java.util.Date;
-
 public class Circulo extends ObjetoGeometrico {
 
     private double radio;

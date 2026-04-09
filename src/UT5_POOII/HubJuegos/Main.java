@@ -2,6 +2,8 @@
 package UT5_POOII.HubJuegos;
 
 
+import UT5_POOII.HubJuegos.hub.HubJuegos;
+import UT5_POOII.HubJuegos.modelos.ResultadoPartida;
 
 public class Main {
         public static void main(String[] args) {
@@ -16,6 +18,14 @@ public class Main {
             hub.registrarJugador("Raúl");
             hub.registrarJugador("Raúl1");
 
+
+
+
+
+
+
+
+            // Listar jugadores
             System.out.println("=== JUGADORES REGISTRADOS ===");
             hub.listarJugadores();
             System.out.println();
@@ -45,7 +55,7 @@ public class Main {
                 System.out.println(r1.ganador.getNombre());
             }
             else {
-                System.out.println("SIN GANADOR");
+                System.out.println("HA GANADO LA CPU");
             }
             hub.mostrarRankingGlobal();
 

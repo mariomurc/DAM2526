@@ -1,7 +1,5 @@
 package UT5_POOII.Ej4Mascotas;
 
-import java.util.ArrayList;
-
 public class Inventario {
 
     public Mascota[] arrayMascotas = new Mascota[5];

@@ -1,5 +1,10 @@
 
-package UT5_POOII.HubJuegos;
+package UT5_POOII.HubJuegos.juegos;
+
+import UT5_POOII.HubJuegos.modelos.Jugador;
+import UT5_POOII.HubJuegos.modelos.ResultadoPartida;
+import UT5_POOII.HubJuegos.modelos.TipoJuego;
+import UT5_POOII.HubJuegos.interfaces.Puntuable;
 
 import java.util.Random;
 import java.util.Scanner;
