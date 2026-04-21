@@ -7,8 +7,8 @@ import java.util.List;
 
 public class MainFicheros {
     public static void main(String[] args) {
-        escribirFichero();
-        leerFichero();
+        //escribirFichero();
+        leerFichero("demo.txt");
         List<Persona> personas = leerPersonasDesdeArchivo("persona.txt");
         for (Persona persona : personas) {
             System.out.println(persona);
@@ -26,12 +26,13 @@ public class MainFicheros {
         }
     }
 
-    public static void leerFichero(){
-        String nombreCompletoFichero = "fichero.txt";
-        Path rutaFichero = Paths.get(nombreCompletoFichero);
+    public static void leerFichero(String nombreFichero){
+
+        Path rutaFichero = Paths.get(nombreFichero);
         try {
             ArrayList<String> lineas = (ArrayList<String>)Files.readAllLines(rutaFichero);
-            System.out.println("Vamos a mostrar el contenido del fichero: " + nombreCompletoFichero);
+            System.out.println("Vamos a mostrar el contenido del fichero: " + nombreFichero);
+            System.out.println("Que tiene " + lineas.size() + " lineas");
             for(String linea : lineas){
                 System.out.println(linea);
             }
