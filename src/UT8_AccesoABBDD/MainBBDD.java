@@ -30,6 +30,7 @@ public class MainBBDD {
         //FASE DE EJECUCIÓN
         ResultSet rs = stmt.executeQuery();
 
+        //FASE DE PROCESO DE LA RESPUESTA
 
 
 
